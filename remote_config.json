@@ -1,0 +1,50 @@
+{
+   "commands" : {
+      "living_lamp_on" : {
+         "url" : "http://192.168.0.113/aprontest.php?id=2&attr=1&value=ON",
+         "data" : "",
+         "method" : "GET",
+         "type": "text/plain"
+      },
+      "living_lamp_off" : {
+         "url" : "http://192.168.0.113/aprontest.php?id=2&attr=1&value=OFF",
+         "data" : "",
+         "method" : "GET",
+         "type": "text/plain"
+      }
+   },
+   "remotes" : {
+      "hall_south" : {
+         "remote_id" : "hall_south",
+         "buttons" : [
+            {"order" : 0, "title" : "Living Lamp On", "command" : "living_lamp_on", "bgcolor" : "#000000", "text_color" : "#FFFFFF"},
+            {"order" : 1, "title" : "Living Lamp Off", "command" : "living_lamp_off", "bgcolor" : "#000000", "text_color" : "#FFFFFF"}
+         ],
+         "settings" : {
+            "display_sleep" : 0,
+            "display_brightness" : 100
+         }
+      },
+      "scott_room" : {
+         "remote_id" : "scott_room",
+         "buttons" : [
+            {"order" : 0, "title" : "Edison Lamp", "command" : "sv_edison_light_toggle", "bgcolor" : "#000000", "text_color" : "#FFFFFF"},
+            {"order" : 1, "title" : "Side Table", "command" : "sv_side_light_toggle", "bgcolor" : "#FFFFFF", "text_color" : "#000000"}
+         ],
+         "settings" : {
+            "display_sleep" : 30,
+            "display_brightness" : 5
+         }
+      },
+      "default" : {
+         "remote_id" : "default",
+         "buttons" : [
+            {"order" : 0, "title" : "Living Room", "command" : "living_light_toggle", "bgcolor" : "#000000", "text_color" : "#FFFFFF"}
+         ],
+         "settings" : {
+            "display_sleep" : 0,
+            "display_brightness" : 100
+         }
+      }
+   }
+}
