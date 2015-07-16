@@ -11,6 +11,18 @@
          "data" : "",
          "method" : "GET",
          "type": "text/plain"
+      },
+      "scott_lamp_on" : {
+         "url" : "http://192.168.0.113/aprontest.php?id=1&attr=1&value=ON",
+         "data" : "",
+         "method" : "GET",
+         "type": "text/plain"
+      },
+      "scott_lamp_off" : {
+         "url" : "http://192.168.0.113/aprontest.php?id=1&attr=1&value=OFF",
+         "data" : "",
+         "method" : "GET",
+         "type": "text/plain"
       }
    },
    "remotes" : {
@@ -18,7 +30,9 @@
          "remote_id" : "hall_south",
          "buttons" : [
             {"order" : 0, "title" : "Living Lamp On", "command" : "living_lamp_on", "bgcolor" : "#000000", "text_color" : "#FFFFFF"},
-            {"order" : 1, "title" : "Living Lamp Off", "command" : "living_lamp_off", "bgcolor" : "#000000", "text_color" : "#FFFFFF"}
+            {"order" : 1, "title" : "Living Lamp Off", "command" : "living_lamp_off", "bgcolor" : "#000000", "text_color" : "#FFFFFF"},
+            {"order" : 2, "title" : "Scott Lamp On", "command" : "scott_lamp_on", "bgcolor" : "#000000", "text_color" : "#FFFFFF"},
+            {"order" : 3, "title" : "Scott Lamp Off", "command" : "scott_lamp_off", "bgcolor" : "#000000", "text_color" : "#FFFFFF"}
          ],
          "settings" : {
             "display_sleep" : 0,
